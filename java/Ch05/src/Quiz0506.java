@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Quize0506 {
+public class Quiz0506 {
 
 	public static void main(String[] args) 
-	{
+		{
 		Scanner s = new Scanner(System.in);
 		{
 		System.out.println("역순 출력할 구구단의 정수를 입력하세요");

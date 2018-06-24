@@ -1,5 +1,5 @@
 
-public class Quize0503 {
+public class Quiz0503 {
 
 	public static void main(String[] args) {
 		
