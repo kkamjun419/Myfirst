@@ -21,16 +21,32 @@ public class Quiz1305 {
 
 		String[] array_word = new String[word.length()]; // 스트링을 담을 배열
 
-		for (int i = 0; i < array_word.length; i++) { // 스트링을 한글자씩 끊어 배열에 저장
+		for (int i = 0; i < array_word.length; i++) 
+		{   // 스트링을 한글자씩 끊어 배열에 저장
 			array_word[i] = Character.toString(word.charAt(i));
 		}
+		
+		int nMax = array_word.length;
+		int nMin = array_word.length/2;
+		
+		for (int i = 0; i < nMin; i++) 
+		{
+			if (!array_word[i].equals (array_word[nMax-1-i]) ) 
+			{
+				System.out.println("회문이 아닙니다.");
+				return;
+			}
+		}
+		System.out.println("회문입니다.");
+	}
+}	
 
 		
-		// 출력 테스트용… 실제 사용시 안써도 됨.
-		for (int i = 0; i < array_word.length; i++) {
-			System.out.println(array_word[i]);
-
-		}
-
-	}
-}
+//		// 출력 테스트용… 실제 사용시 안써도 됨.
+//		for (int i = 0; i < array_word.length; i++) {
+//			System.out.println(array_word[i]);
+//
+//		}
+//
+//	}
+//}
